@@ -18,6 +18,8 @@ BuildRequires:	pkgconfig
 Requires:	guile-libs >= 5:2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_noautostrip	.*.go
+
 %description
 guile-json is a JSON module for Guile. It supports parsing and
 building JSON documents according to the <http://json.org/>
