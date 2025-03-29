@@ -1,0 +1,11 @@
+--- guile-json-4.7.3/Makefile.am.orig	2022-11-28 04:12:36.000000000 +0100
++++ guile-json-4.7.3/Makefile.am	2025-03-29 19:16:17.690458971 +0100
+@@ -21,7 +21,7 @@
+ 
+ SUBDIRS = json tests
+ 
+-ACLOCAL_AMFLAGS = -I build-aux
++ACLOCAL_AMFLAGS = -I m4
+ 
+ PKG_LIST_VERSION=$(shell echo $(PACKAGE_VERSION) | sed "s/\./ /g")
+ 
